@@ -50,7 +50,6 @@ function showFeedList(json) {
 			skeleton += "<li><div class='inner'>" +
 			"<a href='" + postUrl + "' target='_blank'><img style='width:" + tocConfig.thumbWidth + "px;height:" + tocConfig.thumbWidth + "px;' src='" + postImage + "' alt='" + postTitle + "' /></a>" +
 			"<a class='toc-title' href='" + postUrl + "' target='_blank'>" + postTitle + "</a><strong> - (" + commentNum + ")</strong><br>" +
-			"<div class='news-text'>" + postContent + "&hellip;<br style='clear:both;'></div>" +
 			"</div></li>";
 		}
 		resultDesc.innerHTML = (input.value !== '' && filter == 'search') ? "<span>Hasil penelusuran untuk kata kunci <strong>&#8220;" + input.value + "&#8221;</strong> (" + json.feed.openSearch$totalResults.$t + " Temuan)</span>" : "Total: " + json.feed.openSearch$totalResults.$t + " Artikel";;
