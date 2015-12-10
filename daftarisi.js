@@ -1,7 +1,7 @@
 var loadToc, loadCategories, _toc = {
     init: function() {
         var b = {
-                homePage: "http://" + window.location.hostname,
+                homePage: "http://madahrohani.blogspot.com",
                 maxResults: 30,
                 numChars: 270,
                 thumbWidth: 80,
