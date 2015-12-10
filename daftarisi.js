@@ -21,7 +21,7 @@ function showLabels(json) {
 }
 
 function showFeedList(json) {
-	var entries = json.feed.entry, postTitle, postUrl, postImage, postContent, commentNum, skeleton = "";
+	var entries = json.feed.entry, postTitle, postUrl, postImage, commentNum, skeleton = "";
 	if (json.feed.entry) {
 		for (var i = 0; i < tocConfig.feedNum; i++) {
 			if (i == json.feed.entry.length) {
